@@ -1,17 +1,17 @@
-import "/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Route, Router } from "react-router-dom";
-import LandingPage from "./pages/Landing/LandingPage";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 
 function App() {
   return (
-    <Router>
+    <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/" element={<LoginPage />} />
-      <Route path="/" element={<RegisterPage />} />
-    </Router>
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
   );
 }
 
