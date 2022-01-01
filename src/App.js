@@ -1,3 +1,4 @@
+import "/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Route, Router } from "react-router-dom";
 import LandingPage from "./pages/Landing/LandingPage";
