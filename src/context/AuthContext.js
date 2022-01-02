@@ -23,8 +23,7 @@ const AuthContextProvider = ({ children }) => {
 
       var headers = result.headers;
       var data = result.data;
-
-      if (data.isAuthenticated) {
+      if (data.authenticated) {
         setIsAuth(true);
       } else {
         setIsAuth(false);
